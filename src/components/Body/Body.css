@@ -1,0 +1,9 @@
+.body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.artist-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

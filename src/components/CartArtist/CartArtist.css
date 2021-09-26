@@ -1,0 +1,15 @@
+.cart-artist{
+    background-image: linear-gradient(rgb(121, 0, 0,0.3), black);
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.cart-artist img{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.cart-artist p{
+    margin: 0;
+}
