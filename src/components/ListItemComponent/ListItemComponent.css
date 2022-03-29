@@ -1,4 +1,4 @@
-.artist{
+.author{
     background-image: linear-gradient(rgb(121, 0, 0,0.4), black);
     padding: 10px 20px;
     margin: 10px;
@@ -6,21 +6,20 @@
     border-radius: 15px;
     text-align: left;
 }
-.artist:hover{
+.author:hover{
     background-image: linear-gradient(rgb(121, 0, 0,0.7), black);
     border-radius: 5px;
     transform: scale(1.1);
     transition-duration: .7s ;
 }
-.artist img{
-    display: block;
-    border-radius: 50px;
-    margin: auto;
-}
-.artist button{
+
+.author button{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.849);
     border: none;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    
+    
 }

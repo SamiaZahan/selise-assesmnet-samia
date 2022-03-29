@@ -1,11 +1,23 @@
-import React from 'react';
-import './Header.css'
+import React, { useState } from 'react';
+import { Link,   BrowserRouter as Router } from 'react-router-dom';
+import './Header.css';
 const Header = () => {
+    const[auhtColor, setAuthColor]=useState("white")
+    const[favAuhtColor, setFavAuthColor]=useState("white")
+    const changeAuthColor=()=>{
+        setAuthColor("black");
+        setFavAuthColor("white");
+
+    }
+    const changeFavAuthColor=()=>{
+        setFavAuthColor("black");
+        setAuthColor("white");
+
+    }
     return (
         <div className="header">
-            <h2>On The Beat</h2>
-            <p><i>A concert like never before. Flow the beat into your blood with your favourite Artists.</i></p>
-            <h3>Total Budget: $50,00000</h3>  
+            <Link to="/authors" style={{textDecoration:"none", color:auhtColor}}><h2 onClick={changeAuthColor}>Authors</h2> </Link>
+            <Link to="/favAuthors" style={{textDecoration:"none",  color:favAuhtColor}}><h2 onClick={changeFavAuthColor}>Favourite Authors</h2></Link>
             <hr />          
         </div>
     );
